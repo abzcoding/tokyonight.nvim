@@ -13,7 +13,8 @@ function M.setup(config)
 
   colors = {
     none = "NONE",
-    bg_dark = "#1f2335",
+    bg_dark = "#1a1e30",
+    bg_dim = "#1f2335",
     bg = "#24283b",
     bg_highlight = "#292e42",
     terminal_black = "#414868",
@@ -76,7 +77,7 @@ function M.setup(config)
 
   -- Sidebar and Floats are configurable
   colors.bg_sidebar = (config.transparentSidebar and colors.none) or config.darkSidebar and colors.bg_dark or colors.bg
-  colors.bg_float = config.darkFloat and colors.bg_dark or colors.bg
+  colors.bg_float = (config.transparentFloat and colors.none) or config.darkFloat and colors.bg_dark or colors.bg
 
   colors.bg_visual = util.darken(colors.blue0, 0.7)
   colors.bg_search = colors.blue0

@@ -125,6 +125,8 @@ The **day** style will be used if:
 | tokyonight_colors                   | `{}`      | You can override specific color groups to use other groups or a hex color                                                                                       |
 | tokyonight_day_brightness           | `0.3`     | Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors                                                  |
 | tokyonight_lualine_bold             | `false`   | When `true`, section headers in the lualine theme will be bold                                                                                                  |
+| tokyonight_dim_inactive             | `false`   | When `true`, the inactive window will be dimmed                                                                                                                 |
+| tokyonight_global_status            | `false`   | When `true`, window separators highlight would be adjusted for laststatus=3                                                                                     |
 
 ```lua
 -- Example config in Lua
